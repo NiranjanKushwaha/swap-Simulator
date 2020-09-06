@@ -114,22 +114,10 @@ function showNext(){
     }
 }
 
-function showPrev(){
-        if(i>=0 )
-        {
-            --i;
-        $(arr[i]).css("color","dodgerblue");
-        $(arr[i-1]).css("color","red");
-            
-        if(arr[i]<7){
-                $("#firstNum").css("display","none");
-            }
-        
-        }
-
-        else{
-        i=0;
-        }
+function start(){
+    document.getElementById("nextbtn").disabled=false;
+    document.getElementById("clearbtn").disabled=false;
+    document.getElementById("startbtn").disabled=true;
 }
 
 function clearPage(){
